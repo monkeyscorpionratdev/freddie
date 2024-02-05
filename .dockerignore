@@ -1,0 +1,39 @@
+# General
+**/.git
+**/.gitignore
+**/.dockerignore
+**/Dockerfile
+**/README.md
+**/LICENSE
+**/.env.example
+**/node_modules
+**/npm-debug.log
+**/yarn-error.log
+
+# PHP specific
+**/vendor
+
+# Test directories
+**/tests
+**/phpunit.xml
+**/phpunit.xml.dist
+
+# Various IDE and editor directories
+**/.idea
+**/.vscode
+**/*.sublime-project
+**/*.sublime-workspace
+
+# OS generated files
+.DS_Store
+**/Thumbs.db
+
+# Cache & logs
+**/log/*
+!**/log/.gitkeep
+**/tmp/*
+
+# Specific to PHP projects
+**/config/*.local.php
+
+**/var/*
