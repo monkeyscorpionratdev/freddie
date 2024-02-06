@@ -6,7 +6,7 @@ COPY . .
 RUN composer install --no-dev --ignore-platform-reqs --optimize-autoloader
 
 FROM php:8.3-alpine
-
+WORKDIR /app/
 # recommended: install optional extensions ext-ev and ext-sockets
 RUN apk --no-cache add ${PHPIZE_DEPS} libev linux-headers \
     && pecl install ev \
